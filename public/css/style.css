@@ -1,0 +1,200 @@
+html, body{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Add a image to the header*/
+.jumbotron{
+    color: white;
+    background-image: url("../images/cat.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    height: 500px;
+    width: 100%;
+    max-width: 1400px; 
+}
+
+/* Add some padding inside the card container*/
+.card {
+    padding:10px;
+    margin-top: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background:#ddd;
+    padding:20px;
+    }
+.img {
+    width: 100%;
+    height: auto;
+   }
+
+/* Add photo gallery effects */
+div.gallery {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    }
+    div.gallery:hover {
+    border: 1px solid #777;
+    }
+    div.gallery img {
+    width: 100%;
+    height: auto;
+    }
+    div.desc {
+    padding: 15px;
+    text-align: center;
+    }
+
+/* Add a card effect for articles */
+.content {
+    background:#ddd;
+    padding:20px;   
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*{
+    box-sizing: border-box;
+}
+        
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}  
+
+/* Add photo side-by-side*/
+.row.row-no-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+    
+.col-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Add social media icons*/
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 60%;
+    align-content: center;
+}  
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}  
+.fa-instagram {
+    background: red;
+    color: white;
+}  
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+/* Add two forms side-by-side*/
+.container2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f5f5f5;
+}
+.h4 {
+    font-size: 12px;
+}
+.span6{
+    float: left;
+    width:50%
+}
+.contact-form{
+    max-width: 300px;
+    padding: 19px 29px 29px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;   
+}
+.contact-form .contact-form-heading,
+{
+    margin-bottom:10px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="phone"]{
+    font-size: 14px;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 7px 9px;
+    width: 200px;
+}
+.feedback-form{
+    max-width: 300px;
+    padding: 19px 29px 29px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;  
+}
+.feedback-form .feedback-form-heading,
+{
+    margin-bottom:10px;
+}
+.feedback-form input[type="text"],
+.feedback-form input[type="phone"]{
+    font-size: 14px;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 7px 9px;
+    width: 200px;
+}
+
+.flow {
+    display: inline;
+}
+
+/* Adding style to the footer*/
+.footer {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background:#353c44;
+    margin-top: 10px;
+}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media only screen and (max-width: 992px){
+.responsive {
+    width: 50%;
+    margin: 6px 0;
+}
+.span6 {
+    width: 50%;
+  }
+}
+/* On screens that are 414px wide or less, make the columns stack on top of each other */
+@media only screen and (max-width: 600px){
+.responsive {
+    width: 100%;
+}
+.span6 {
+    float: none;
+    width: 100%;
+   }
+   .media, .media-body, .flow {
+    flex-direction: column;
+    width: 100%;
+   }
+}
+
