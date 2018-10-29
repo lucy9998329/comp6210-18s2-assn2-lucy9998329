@@ -10,8 +10,28 @@ class Contact extends Controller {
         $contact = $this->contact->showAllMessages();
 
         $data = [
-            'contact' => $contact;
-        ]
+            'contact' => $contact
+        ];
 
         $this->view('contact/index', $data);
     }
+
+    public function addData(){
+
+        echo $_POST['fname'];
+        echo $_POST['lname'];
+        echo $_POST['subject'];
+        echo $_POST['message'];
+
+        if(!empty($_POST['fname']) && !empty($_POST['lname']) && !empty($_POST['subject']) && !empty($_POST['message'])) {
+
+                if($this->contact->addDataToTheDataBase($_POST['fname'], $_POST['lname'], $_POST['subject'], $_POST['message'])) {
+
+                    echo "SUCCESS!";
+
+            } else {
+                echo "WRONG - IT BROKE!";
+            }            
+        }
+    }
+}

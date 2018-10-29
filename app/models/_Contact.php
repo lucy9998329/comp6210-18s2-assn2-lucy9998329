@@ -8,8 +8,24 @@ class _Contact {
         $this->db = new Database;
     }
 
-    public function getAllPeople() {
+    public function showAllMessages() {
         $this->db->query('SELECT * FROM tbl_contact');
         return $this->db->resultSet();
-      }
     }
+
+    public function addDataToTheDataBase($fn, $ln, $sub, $msg){
+        $this->db->query('INSERT INTO tbl_contact (FNAME, LNAME, SUB, EMAIL) VALUES (:fn, :ln, :sub, :msg)');
+        
+        $this->db->bind(':fn', $fn);
+        $this->db->bind(':ln', $ln);
+        $this->db->bind(':sub', $sub);
+        $this->db->bind(':msg', $msg);
+
+    //Return true or false, based on if query is successful or not
+        if($this->db->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}

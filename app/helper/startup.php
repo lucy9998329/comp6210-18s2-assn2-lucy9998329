@@ -13,7 +13,7 @@
     define ("DBPASS", "user1234");
     define ("DBNAME", "containerdb");
 
-    define("GUSER", "");
-    define("GPASS", "");
+    define("GUSER", "9998329@g.toiohomai.ac.nz");
+    define("GPASS", "laurel2018");
 
 ?>

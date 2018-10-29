@@ -1,4 +1,4 @@
-
+</div>
 <div class="row">
   <div class="footer" style="margin-bottom:0">
    <p>&copy 2017 Lucy Laurentino. All rights reserved. </p><br>
@@ -14,8 +14,6 @@
 
 </body>
 </html>
-
- 
 
 
 

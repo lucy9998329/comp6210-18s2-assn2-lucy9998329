@@ -1,45 +1,41 @@
 use containerdb;
 
-CREATE TABLE IF NOT EXISTS tbl_contact (
+CREATE TABLE IF NOT EXISTS tbl_people (
 
     ID INT(11) AUTO_INCREMENT,
     FNAME VARCHAR(20) NOT NULL,
     LNAME VARCHAR(30) NOT NULL,   
-    SUB VARCHAR(255) NOT NULL,
+    DOB DATE NOT NULL,
     PRIMARY KEY (ID)
 ) AUTO_INCREMENT = 1;
 
-INSERT INTO tbl_contact (FNAME, LNAME, SUB, EMAIL) VALUES ('Bob', 'Taylor', 'Subject', 'Email');
-INSERT INTO tbl_contact (FNAME, LNAME, SUB, EMAIL) VALUES ('Bob', 'Taylor', 'Subject', 'Email');
-INSERT INTO tbl_contact (FNAME, LNAME, SUB, EMAIL) VALUES ('Bob', 'Taylor', 'Subject', 'Email');
-INSERT INTO tbl_contact (FNAME, LNAME, SUB, EMAIL) VALUES ('Bob', 'Taylor', 'Subject', 'Email');
-INSERT INTO tbl_contact (FNAME, LNAME, SUB, EMAIL) VALUES ('Bob', 'Taylor', 'Subject', 'Email');
+INSERT INTO tbl_people (FNAME, LNAME, DOB) VALUES ('Bob', 'Taylor', '1954-04-01');
+INSERT INTO tbl_people (FNAME, LNAME, DOB) VALUES ('Lisa', 'Simpson', '2010-03-23');
+INSERT INTO tbl_people (FNAME, LNAME, DOB) VALUES ('Lara', 'Taylor', '1968-11-10');
 
 use containerdb;
 
-SELECT * FROM tbl_contact;
-
-DROP TABLE tbl_contact;
+SELECT * FROM tbl_people;
 
 use containerdb;
 
--- DROP TABLE IF EXISTS tbl_users;
--- CREATE TABLE tbl_users (
---     ID int(11) NOT NULL AUTO_INCREMENT,
---     FN varchar(255) NOT NULL,
---     Email varchar(255) NOT NULL,
---     PN int(14) NOT NULL,
---     CN varchar(255) NOT NULL,
---     MSG varchar(255) NOT NULL,
---     PRIMARY KEY (ID)
--- ) AUTO_INCREMENT = 1;
+DROP TABLE IF EXISTS tbl_users;
+CREATE TABLE tbl_users (
+    ID int(11) NOT NULL AUTO_INCREMENT,
+    FN varchar(255) NOT NULL,
+    Email varchar(255) NOT NULL,
+    PN int(14) NOT NULL,
+    CN varchar(255) NOT NULL,
+    MSG varchar(255) NOT NULL,
+    PRIMARY KEY (ID)
+) AUTO_INCREMENT = 1;
 
--- INSERT INTO tbl_users(FN, Email, PN, CN, MSG) VALUES ('Lucy Laurentino', 'lucylaurentino@yahoo.co.nz', '0210651098', 'Zespre', 'Please contact me to arrange an interview'); 
--- INSERT INTO tbl_users(FN, Email, PN, CN, MSG) VALUES ('Peter Smith', 'peter@yahoo.co.nz', '0210651099', 'Datacom', 'Please send me more information about your job experience'); 
--- INSERT INTO tbl_users(FN, Email, PN, CN, MSG) VALUES ('Ankit Singh', 'ankit@yahoo.co.nz', '0210651091', 'Trustpower', 'Please contact me on 0210651091');
--- INSERT INTO tbl_users(FN, Email, PN, CN, MSG) VALUES ('Liene Power', 'liene@yahoo.co.nz', '0210651092', 'EvoSoft', 'Please contact me for a job interview'); 
--- INSERT INTO tbl_users(FN, Email, PN, CN, MSG) VALUES ('Luan Peterle', 'luan@yahoo.co.nz', '0210651093', 'Radford Software', 'Please email me more information about your previous experience'); 
--- INSERT INTO tbl_users(FN, Email, PN, CN, MSG) VALUES ('ToniaJonson',  'tonia@yahoo.co.nz', '0210651094', 'Hi-Tech', 'Please contact me for a job interview');
+INSERT INTO tbl_users(FN, Email, PN, CN, MSG) VALUES ('Lucy Laurentino', 'lucylaurentino@yahoo.co.nz', '0210651098', 'Zespre', 'Please contact me to arrange an interview'); 
+INSERT INTO tbl_users(FN, Email, PN, CN, MSG) VALUES ('Peter Smith', 'peter@yahoo.co.nz', '0210651099', 'Datacom', 'Please send me more information about your job experience'); 
+INSERT INTO tbl_users(FN, Email, PN, CN, MSG) VALUES ('Ankit Singh', 'ankit@yahoo.co.nz', '0210651091', 'Trustpower', 'Please contact me on 0210651091');
+INSERT INTO tbl_users(FN, Email, PN, CN, MSG) VALUES ('Liene Power', 'liene@yahoo.co.nz', '0210651092', 'EvoSoft', 'Please contact me for a job interview'); 
+INSERT INTO tbl_users(FN, Email, PN, CN, MSG) VALUES ('Luan Peterle', 'luan@yahoo.co.nz', '0210651093', 'Radford Software', 'Please email me more information about your previous experience'); 
+INSERT INTO tbl_users(FN, Email, PN, CN, MSG) VALUES ('ToniaJonson',  'tonia@yahoo.co.nz', '0210651094', 'Hi-Tech', 'Please contact me for a job interview');
 
  SELECT * FROM tbl_users;
 

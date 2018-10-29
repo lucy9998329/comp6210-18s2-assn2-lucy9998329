@@ -2,14 +2,6 @@
 
     include(APPROOT . '/helper/helperfunctions.php');
 
-    
-    // use PHPMailer\PHPMailer\PHPMailer;
-    // use PHPMailer\PHPMailer\Exception;
-
-    // require 'path/to/PHPMailer/src/Exception.php';
-    // require 'path/to/PHPMailer/src/PHPMailer.php';
-    // require 'path/to/PHPMailer/src/SMTP.php';
-
     class Pages extends Controller {
 
       public function __construct() {
@@ -57,34 +49,44 @@
 
     }
 
-  
+   // use PHPMailer\PHPMailer\PHPMailer;
+   // use PHPMailer\PHPMailer\Exception;
+
+   // require 'path/to/PHPMailer/src/Exception.php';
+   // require 'path/to/PHPMailer/src/PHPMailer.php';
+   // require 'path/to/PHPMailer/src/SMTP.php';
+
 
 // $mail = new PHPMailer(true);
 
-// //Send mail using gmail
+//Send mail using gmail
 // if($send_using_gmail){
-//     $mail->IsSMTP(); // telling the class to use SMTP
-//     $mail->SMTPAuth = true; // enable SMTP authentication
-//     $mail->SMTPSecure = "ssl"; // sets the prefix to the servier
-//     $mail->Host = "smtp.gmail.com"; // sets GMAIL as the SMTP server
-//     $mail->Port = 465; // set the SMTP port for the GMAIL server
-//     $mail->Username = "your-gmail-account@gmail.com"; // GMAIL username
-//     $mail->Password = "your-gmail-password"; // GMAIL password
+// $mail->IsSMTP(); // telling the class to use SMTP
+// $mail->SMTPAuth = true; // enable SMTP authentication
+// $mail->SMTPSecure = "ssl"; // sets the prefix to the servier
+// $mail->Host = "smtp.gmail.com"; // sets GMAIL as the SMTP server
+// $mail->Port = 465; // set the SMTP port for the GMAIL server
+// $mail->Username = "9998329@g.toiohomai.ac.nz"; // GMAIL username
+// $mail->Password = "laurel2018"; // GMAIL password
 // }
 
-// //Typical mail data
-// $mail->AddAddress(['email'], 'Lucy');
-// $mail->SetFrom($email_from, $name_from);
-// $mail->Subject = "My Subject";
-// $mail->Body = "Message";
+//Typical mail data
+ // $mail->AddAddress(['email'], 'Lucy');
+ // $mail->SetFrom($email_from, Lucy);
+ // $mail->Subject = "MVC CONTACT FORM";
+ // $mail->Body = 'Message';
 
 // try{
-//     $mail->Send();
-//     echo "Success!";
-// } catch(Exception $e){
-//     //Something went bad
-//     echo "Fail - " . $mail->ErrorInfo;
+// $mail->Send();
+// echo "Success!";
 // }
+
+
+// catch(Exception $e) {
+// //Something went bad
+// echo "Fail - " . $mail->ErrorInfo;
+// }
+
 
 ?>
 

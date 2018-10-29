@@ -26,9 +26,9 @@
         <div class="span6"> 
             <form class="feedback-form">
                 <h2 class="feedback-form-heading">Feedback</h2>
-                <input type="text" class="input-block-level" placeholder="firstname *" required="required">
-                <input type="text" class="input-block-level" placeholder="lastname *" required="required">
-                <input type="text" class="input-block-level" placeholder="email *" required="required">
+                <input type="text" id="fn" class="input-block-level" placeholder="firstname *" >
+                <input type="text" id="ln" class="input-block-level" placeholder="lastname *"">
+                <input type="text" id="email" class="input-block-level" placeholder="email *" ">
                 <h4>Comment:</h4>
                 <form role="form">
                     <div class="form-group"><textarea class="form-control" rows="3" required></textarea></div>
